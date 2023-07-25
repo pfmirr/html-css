@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .div1{
+            background-color: aqua;
+        }
+        .div2{
+            background-color: pink;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            background-color:pink;
+        }
+        span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 -->
+    <!-- 独占一行/宽度默认父级的100%/添加宽高属性生效 -->
+    <div class="div1">这是div标签</div>
+    <div class="div2">这是div标签</div>
+    <!-- 行内元素 -->
+    <!-- 一行共存多个，由内容决定大小，加宽高不生效，背景色生效 -->
+    <span>span1</span><span>span2</span><span>span3</span>
+    <!-- 行内块元素 -->
+    <!-- 一行共存多个，由内容决定大小，加宽高生效，背景色生效 -->
+    <img src="./../images/1.jpg" alt="">
+    <img src="./../images/1.jpg" alt="">
+</body>
+</html>
