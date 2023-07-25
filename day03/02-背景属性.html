@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            /*  背景图：装饰性图片 背景默认平铺（复制） 效果*/
+            background-image: url(./../images/1.jpg);
+            /* 背景图平铺方式 no-repeat不平铺  repeat平铺 repeat-x 沿x平铺 repeat-y */
+            background-repeat: no-repeat;
+            /* 背景图位置 英文关键字/数字加关键字
+                水平：正数向右；负数向左  垂直：正数向下；负数向上
+                * 关键字取值方式写法，可以颠倒取值顺序
+                * 可以只写一个关键字，另一个方向默认为居中；数字只写一个值表示水平方向，垂直方向为居中
+            */
+            background-position: center left;
+            /* 背景图缩放：调整背景图和盒子尺寸
+            * 关键字
+            *  cover：等比例缩放背景图片以完全覆盖背景区，可能背景图片部分看不见
+             *  contain：等比例缩放背景图片以完全装入背景区，可能背景区部分空白
+             * 百分比：根据盒子尺寸计算图片大小（100%，图宽盒宽相同）
+             * 数字 + 单位（例如：px）
+            */
+            background-size: cover;
+            /* 背景图固定 */
+            background-attachment: fixed;
+            /* 背景复合属性  
+            背景色 背景图 背景图平铺方式 背景图位置/背景图缩放  背景图固定（**空格隔开各个属性值，不区分顺序**）
+            */
+            background: pink url(./../images/2.jpg) no-repeat center/cover fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        div标签
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器 */
+        /* div span {
+            color: red;
+        } */
+
+        /* 子代选择器 */
+        /* div>span {
+            color: red;
+        } */
+        /* 并集选择器 */
+        /* div,span,p{
+            color: aquamarine;
+        } */
+        /* 交集选择器 */
+        span.box{
+            color: red;
+        }
+        /* 鼠标悬停在span标签，颜色发生变化 */
+        span:hover{
+            color: black;
+        }
+
+        /* a:link {
+            color: brown;
+        }
+
+        a:visited{
+            color: aquamarine;
+        }
+        a:active{
+            color:black;
+        } */
+
+        a{
+            color: aquamarine;
+        }
+
+        a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">你好</a>
+    <br>
+    <br>
+    <!-- 只有本行文字变化 -->
+    <span class="box">我爱你</span>
+    <div>
+        <span>
+            这是div的后代，span
+        </span>
+        <p class="box">
+            <span>
+                这是span的后代，孙子span
+            </span>
+        </p>
+    </div>
+    <p>11111</p>
+</body>
+
+</html>

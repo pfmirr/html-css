@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            /* 宽度 */
+            width: 100px;
+            /* 高度 */
+            height: 100px;
+            /* 背景色 */
+            background-color: red;
+            /* 字体大小 属性值必须有单位，谷歌默认字体大小为18px*/
+            font-size: 30px;
+            /* 字体粗细 */
+            /* 不加粗或者是normal 加粗为700或者bold */
+            font-weight: 400;
+            /* 字体倾斜 */
+            /* 正常为normal，倾斜为italic */
+            font-style: normal;
+        }
+
+        .orange {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* color文字颜色 关键字/rgb表示法/rgba表示法 a表示透明度/十六进制表示法*/
+            /* color: aquamarine; */
+            /* color: rgb(0, 22, l67); */
+            /* color: rgba(0, 0, 0,0.2); */
+            color: #0000ff;
+
+            /* font符合属性  网页文字公共样式 空格隔开 从左到右 倾斜 加粗 字号/行高 字体 （字号和字体必须书写）*/
+            font: italic 700 30px/2 楷体;
+        }
+
+        p {
+            /* 行高，多行文本间距 ，为上间距、下间距和文本高度，只写数字为字体大小的倍数，带单位就是实际的间距*/
+            line-height: 2;
+            /* 文本缩进，数字+px,数字+em(1em等于当前字号大小) */
+            text-indent: 2em;
+
+        }
+
+        .center {
+            /* 行高，文字垂直居中，行高属性值等于盒子高度属性值 */
+            height: 100px;
+            background-color: aqua;
+            line-height: 100px;
+            /* 文字对齐方式 left/center/right,对象是文字 */
+            text-align: center;
+            /* 文字修饰线 none/underline/line-through/overline*/
+            text-decoration: line-through;
+            /* 字体族 有很多字体从左到右显示，逗号隔开，最后一个为字体族，目前网页选无衬线字体族*/
+            font-family: 幼圆；
+        }
+
+        .imgs {
+            /* 图片居中，给父级盒子叫标签 */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">div1</div>
+    <div class="orange">div2</div>
+    <p>最近热巴又一次卷入了恋情风波，对象依旧是30岁男星黄景瑜，还记得前段时间热巴本人晒自拍带鲸鱼表情惹出了争议吗？
+        一周多时间过去了，风波至今没有平息，反而进一步升级，到了连热巴圈中好友都被骚扰的地步最近热巴又一次卷入了恋
+        情风波，对象依旧是30岁男星黄景瑜，还记得前段时间热巴本人晒自拍带鲸鱼表情惹出了争议吗？一周多时间过去了，风波
+        至今没有平息，反而进一步升级，到了连热巴圈中好友都被骚扰的地步最近热巴又一次卷入了恋情风波，对象依旧是30岁男星
+        黄景瑜，还记得前段时间热巴本人晒自拍带鲸鱼表情惹出了争议吗？一周多时间过去了，风波至今没有平息，反而进一步升级，
+        到了连热巴圈中好友都被骚扰的地步
+    </p>
+    <div class="center">你好</div>
+    <div class="imgs">
+        <img src="./cat.gif">
+    </div>
+</body>
+
+</html>
